@@ -5,7 +5,6 @@ import {
   AsyncStorage,
   SafeAreaView,
 } from 'react-native';
-import {Ionicons} from "@expo/vector-icons"
 import Colors from "../constants/Colors";
 export default class HomeScreen extends React.Component {
 
