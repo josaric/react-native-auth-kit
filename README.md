@@ -8,3 +8,5 @@ material textfield: react-native-material-textfield
 ### Home screen with Hello text & sign out button
 
 expo "sdkVersion": "36.0.0",
+
+![DEMO](https://media.giphy.com/media/TKpnwNmusuoAqf6GOM/giphy.gif)
