@@ -4,6 +4,7 @@ import AuthScreen from "../screens/AuthScreen";
 import HomeScreen from "../screens/HomeScreen";
 import LogoutScreen from "../screens/LogoutScreen";
 import LoginScreen from "../screens/LoginScreen";
+import ComponentsScreen from "../screens/ComponentsScreen";
 import {createBottomTabNavigator} from "react-navigation-tabs";
 import {Ionicons} from "@expo/vector-icons";
 import React from "react";
@@ -14,8 +15,17 @@ const AppStack = createBottomTabNavigator({
     screen: HomeScreen,
     navigationOptions: {
       tabBarLabel:"Home",
-      tabBarIcon: ({ tintColor }) => (
-          <Ionicons color={Colors.main} name="ios-home" size={20}/>
+      tabBarIcon: ({ focused }) => (
+          <Ionicons color={focused ? Colors.main: Colors.gray} name="ios-home" size={20}/>
+      )
+    },
+  },
+  Components:{
+    screen: ComponentsScreen,
+    navigationOptions: {
+      tabBarLabel:"Components",
+      tabBarIcon: ({ focused }) => (
+          <Ionicons color={focused ? Colors.main: Colors.gray} name="ios-list" size={20}/>
       )
     },
   },
